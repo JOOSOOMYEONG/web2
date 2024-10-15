@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jakomo실습</title>
+    <style>
+        .container {
+            width: 100%;
+            display: flex;
+        }
+
+        .btn {
+            width: 40%;
+            height: 300px;
+            background-color: rgb(58, 129, 190);
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .btn:hover {
+            background-size: cover;
+            flex-shrink: 0;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <sections class="container">
+        <div class="btn">
+            <div class="text">
+                <h2>Leather</h2>
+                <p>프리미엄 가죽</p>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="text">
+                <h2>Fabric</h2>
+                <p>기능성 패브릭</p>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="text">
+                <h2>Material</h2>
+                <p>올바른 내장재</p>
+            </div>
+        </div>
+    </sections>
+</body>
+
+</html>
