@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼센트 실습</title>
+    <script src="https://kit.fontawesome.com/ab4f71209c.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            background-color: antiquewhite;
+        }
+
+        .box_container>div {
+            height: 80px;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 900;
+            padding: 0px 16px;
+            color: lightcoral;
+        }
+
+        i:hover {
+            background-color: aquamarine;
+        }
+
+        .box::before {
+            content: "";
+            background-color: aqua;
+            height: 80px;
+            width: 0%;
+            left: 0;
+            top: 0;
+            /* display: block; */
+        }
+
+        .box::after {
+            content: "";
+            background-color: aqua;
+            height: 80px;
+            width: 20%;
+            left: 0;
+            top: 0;
+            /* display: block; */
+        }
+
+        i {
+            color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <p>웹부터 포트폴리오까지!!</h1>
+    <section class="box_container">
+        <div class="box">
+
+            <i class="fa-solid fa-dog fa-2x"></i>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-cat fa-2x"></i>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-music fa-2x"></i>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-headphones fa-2x"></i>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-clover fa-2x"></i>
+        </div>
+    </section>
+</body>
+
+</html>

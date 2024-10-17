@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>퍼센트_선생님</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        ul {
+            padding: 0;
+            /* list-style의 빈공간을 없앰 */
+        }
+
+        li {
+            list-style: none;
+            border: 1px solid #000;
+            margin: 16px;
+            padding: 0 16px;
+            height: 80px;
+            position: relative;
+        }
+
+        li::before {
+            content: "";
+            /* 가상요소 사용 시 필수!!!!!!!!!!!!!! */
+            width: 0%;
+            height: 80px;
+            position: absolute;
+            background-color: rgb(6, 192, 0);
+            display: block;
+            /* 가상요소는 인라인으로 콘텐츠를 작성하지 않고 공백으로 사용할 시 보이지 않기 떄문에 [display: block/inline-block/flex] 을 넣어 보이게 만드는 것 */
+           
+            /* 다른 영향을 받지 않고 콘텐츠의 시작부터 붙게 만듦 */
+            left: 0;
+            top: 0;
+            /* 다른 영향을 받지 않고 콘텐츠의 시작부터 붙게 만듦 */
+            z-index: -1;
+        }
+
+        li:nth-child(1):hover::before {
+            width: 20%;
+            transition: 1.5s;
+        }
+        li:nth-child(2):hover::before {
+            width: 40%;
+            transition: 2s;
+        }
+        li:nth-child(3):hover::before {
+            width: 60%;
+            transition: 2.5s;
+        }
+        li:nth-child(4):hover::before {
+            width: 80%;
+            transition: 3s;
+        }
+        li:nth-child(5):hover::before {
+            width: 100%;
+            transition: 3.5s;
+        }
+        /* nth-child()로 콘텐츠의 순서대로 다른 값을 줄 수 있음 */
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1> 제목</h1>
+        <ul>
+            <li>
+                <h2>20%</h2>
+            </li>
+            <li>
+                <h2>40%</h2>
+            </li>
+            <li>
+                <h2>60%</h2>
+            </li>
+            <li>
+                <h2>80%</h2>
+            </li>
+            <li>
+                <h2>100%</h2>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

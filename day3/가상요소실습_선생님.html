@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소실습_선생님</title>
+    <style>
+        body {
+            background-color: rgb(123, 199, 199);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            width: 200px;
+            display: inline-block;
+            /* inline-block : 텍스트 자체를 변경 가능 */
+            /* block : 블록 한 줄 자체를 변경 */
+            margin: 16px;
+            font-size: 20px;
+            height: 150px;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+        }
+
+        a > span:first-child {
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        a > span:last-child {
+            color: rgb(255, 113, 208);
+            opacity: 0;
+        }
+
+        a:hover span:last-child {
+            opacity: 1;
+            transform: translateY(25px);
+            transition: 0.3s;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <span>HTML</span>
+                    <span>markup</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>CSS</span>
+                    <span>style</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Javascript</span>
+                    <span>coding</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>UXUI</span>
+                    <span>design</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Portfolio</span>
+                    <span>oo</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
