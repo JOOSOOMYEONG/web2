@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드 실습</title>
+
+    <script src="https://kit.fontawesome.com/ab4f71209c.js" crossorigin="anonymous"></script>
+
+    <style>
+        ul {
+            padding: 0;
+        }
+
+        li {
+            width: 400px;
+            background-color: rgb(214, 226, 186);
+            list-style: none;
+            border: none;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        figure {
+            background: url(./service_img_04.png);
+            width: 400px;
+            height: 170px;
+            margin: 0;
+            /* 피규어 태그 자체가 가지고 있는 margin 값이 있어서 0으로 해야 사진이 알맞게 들어감 */
+            border-radius: 20px;
+        }
+
+        .text_area {
+            color: rgb(9, 56, 9);
+            padding: 20px;
+        }
+
+        .text_box1 {
+            font-size: 18px;
+        }
+
+        .text_box2 {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .top_text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 100px;
+            color: rgb(9, 56, 9);
+            text-align: center;
+            line-height: 40px;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li>
+                <div class="text_area">
+                    <div class="top_text">
+                        <p class="text_box1">위탁급식시스템</p>
+                        <div class="btn">
+                            <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                    <p class="text_box2">급식업무 일체를 위임받아 체계적으로 운영하는 전문 급식 서비스</p>
+                </div>
+                <figure></figure>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
