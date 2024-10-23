@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플러스에서엑스로_선생님</title>
+
+    <script src="https://kit.fontawesome.com/ab4f71209c.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            background-color: rgb(100, 83, 61);
+            color: #fff;
+        }
+        
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 16px;
+        }
+        
+        .plus_btn:hover > i {
+            animation-name: trans_close;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes trans_close {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-225deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+        <div class="plus_btn">
+            <i class="fa-solid fa-plus fa-2xl"></i>
+        </div>
+    </header>
+</body>
+</html>

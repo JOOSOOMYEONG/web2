@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네모박스가네모네모</title>
+    <style>
+        .animation_box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border-radius: 25px;
+            animation-name: box_square;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        /* .animation_box {
+            animation: name 이름, duration 지속시간, timing-function 타이밍함수, delay 대기시간, interation-count 반복횟수, diection 애니메이션 방향, fill-mode 전후상태, play-state 재생 정지;
+        } */
+        /* 애니메이션 한 번에 작성하는 법 */
+        
+        @keyframes box_square {
+            20% {
+                transform: translateX(200px);
+            }
+            60% {
+                transform: translate(200px,200px);
+            }
+            80% {
+                transform: translate(0px, 200px);
+            }
+            100% {
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation_box"></div>
+</body>
+</html>
