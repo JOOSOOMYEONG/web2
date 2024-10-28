@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_24</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            text-align: center;
+            margin: 50px auto;
+            display: block;
+            padding: 16px 24px;
+            font-size: 24px;
+            background: salmon;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            /* 커서가 포인터로 바뀜 */
+        }
+
+        ul {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        button:focus + ul li {
+            animation: slide 5s forwards;
+            animation-timing-function: cubic-bezier(0.49, 0.05, 0.4, 1.02);
+        }
+
+        li {
+            list-style: none;
+            min-width: 268px;
+            height: 150px;
+            margin: 0 16px;
+            animation-timing-function: linear;
+        }
+
+        li:nth-child(1) {
+            background: url(./shutterstock_602702633-1024x351-1.png);
+            background-size: cover;
+        }
+        li:nth-child(2) {
+            background: url(./7170113c6a983.jpg);
+            background-size: cover;
+        }
+        li:nth-child(3) {
+            background: url(./shutterstock_602702633-1024x351-1.png);
+            background-size: cover;
+        }
+        li:nth-child(4) {
+            background: url(./7170113c6a983.jpg);
+            background-size: cover;
+        }
+
+        @keyframes slide {
+            20% {
+                transform: translateX(0);
+            }
+            
+            100% {
+                transform: translateX(-1200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button>고양이가 지나가요</button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>
