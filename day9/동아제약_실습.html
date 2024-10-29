@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약_실습</title>
+
+    <script src="https://kit.fontawesome.com/ab4f71209c.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url(./keyvisual02_CUSTOMERcolor_PC.jpg);
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .h_top {
+            margin: 10px;
+            text-align: right;
+        }
+
+        .h_top > a {
+            text-decoration: none;
+            color: #111;
+            display: inline-block;
+            margin: 0 16px;
+            font-size: 12px;
+        }
+
+        .h_box {
+            padding: 16px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #111;
+        }
+
+        .menu_box {
+            display: flex;
+            list-style: none;
+            margin: 16px;
+        }
+
+        .menu_box > li > a {
+            margin: 16px;
+            text-decoration: none;
+            color: #111;
+            font-weight: 900;
+        }
+        
+        .h_right_box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search_box {
+            display: flex;
+            border: 1px solid #111;
+            align-items: center;
+            padding: 16px ;
+        }
+
+        .search_box > input {
+            border: none;
+            background: none
+        }
+
+        h1 > img {
+            width: 150px;
+        }
+
+        figure > i {
+            padding: 0 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="h_top">
+            <a href="#">준법경영</a>
+            <a href="#">판매약국찾기</a>
+            <a href="#">감사제보하기</a>
+        </div>
+        <div class="h_box">
+            <h1>
+                <img src="./dlalwl.svg" alt="">
+            </h1>
+            <nav>
+                <ul class="menu_box">
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">브랜드</a>
+                    </li>
+                    <li>
+                        <a href="#">R&D</a>
+                    </li>
+                    <li>
+                        <a href="#">정도경영</a>
+                    </li>
+                    <li>
+                        <a href="#">뉴스룸</a>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                    </li>
+                    <li>
+                        <a href="#">고객지원</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="h_right_box">
+                <div class="search_box">
+                    <input type="text" placeholder="검색어 입력">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </div>
+                <figure>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </figure>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
