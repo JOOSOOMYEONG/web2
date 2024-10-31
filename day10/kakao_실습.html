@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,136 @@
     <script src="https://kit.fontawesome.com/ab4f71209c.js" crossorigin="anonymous"></script>
 
     <style>
+        @font-face {
+            font-family: 'NanumSquareNeoLight';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+        }
 
+        @font-face {
+            font-family: 'NanumSquareNeoExtraBold';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .pc_header_top {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 32px;
+            align-items: center;
+            border-bottom: 0.3px solid #c7c7c7;
+        }
+
+        .pc_header_bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 32px;
+            align-items: center;
+            border-bottom: 0.3px solid #c7c7c7;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-family: 'NanumSquareNeoExtraBold';
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            font-family: 'NanumSquareNeoLight';
+        }
+
+        .menu>li {
+            padding: 0 16px;
+            font-weight: 900;
+        }
+
+        .top_right_box {
+            display: flex;
+
+        }
+
+        .top_right_box>figure {
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-family: 'NanumSquareNeoExtraBold';
+        }
+
+        .bottom_right_box {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .bottom_right_box>li {
+            padding: 0 16px;
+            font-weight: 900;
+            font-family: 'NanumSquareNeoExtraBold';
+        }
+
+        .bottom_right_box>li:nth-child(2) {
+            border-left: 0.3px solid #c7c7c7;
+        }
+
+        .bottom_right_box>li:nth-child(3) {
+            border-left: 0.3px solid #c7c7c7;
+            padding-right: 5px;
+        }
     </style>
 </head>
+
 <body>
     <section>
         <header>
-            <h1>kakao</h1>
-            <nav>
-                <ul>
-                    <li>소개</li>
-                    <li>이야기</li>
-                    <li>기술과 서비스</li>
-                    <li>약속과 책임</li>
-                    <li>뉴스</li>
-                    <li>투자정보</li>
-                </ul>
-            </nav>
-            <figure>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </figure>
-            <figure>
-                <i class="fa-solid fa-globe"></i>
-            </figure>
-            <figure>
-                <i class="fa-regular fa-moon"></i>
-            </figure>
-        </header>
+            <div class="pc_header">
+                <div class="pc_header_top">
+                    <h1>kakao</h1>
+                    <nav>
+                        <ul class="menu">
+                            <li>소개</li>
+                            <li>이야기</li>
+                            <li>기술과 서비스</li>
+                            <li>약속과 책임</li>
+                            <li>뉴스</li>
+                            <li>투자정보</li>
+                        </ul>
+                    </nav>
+                    <div class="top_right_box">
+                        <figure>
+                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                        </figure>
+                        <figure>
+                            <i class="fa-solid fa-globe fa-lg"></i>
+                        </figure>
+                        <figure>
+                            <i class="fa-regular fa-moon fa-lg"></i>
+                        </figure>
+                    </div>
+                </div>
+                <div class="pc_header_bottom">
+                    <h2>카카오톡</h2>
+                    <ul class="bottom_right_box">
+                        <li>카톡 안녕가이드</li>
+                        <li>카톡설명서</li>
+                        <li>다운로드</li>
+                        <i class="fa-solid fa-circle-down"></i>
+                    </ul>
+                </div>
+            </div>
 
-        
+            <div class="mo_header">
+
+            </div>
+        </header>
     </section>
 </body>
+
 </html>
