@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 사용하는 css</title>
+    <style>
+        body {
+            margin: 0;
+            height: 10000px;
+        }
+        .style {
+            /* text 속성 */
+            font-size: px, cm, rem;
+            font-weight: 텍스트 굵기;
+            color: 텍스트 색상;
+            font-family: 폰트;
+            text-decoration: a태그 언더라인;
+            text-align: 텍스트 정렬;
+
+            /* flex 속성 */
+            display: flex 블록 요소들을 가로 정렬;
+            justify-content: flex-end, flex-start, center
+            콘텐츠 간격을 부모 요소 width 안에서 나눠먹도록 설정하는 기능;
+            align-items: 세로축을 기준으로 정렬;
+            flex-wrap: 요소들이 부모요소를 넘어갈 떄 줄바꿈 여부를 결정;
+            flex-direction: 중심축을 기본인 row에서 column으로 변경하는 속성;
+
+            /* background 속성 */
+            background-color: 색상 지정;
+            background: 컬러값 지정, url() 이미지 지정 가능;
+            background-size: 이미지 사이즈 조정 px, % cover, contain;
+            background-image: 이미지;
+            background-repeat: no-repeat;
+            background-position: 60% 이미지의 위치를 결정;
+            
+            /* 영역 속성 */
+            width: 가로 영역;
+            height: 세로 영역;
+            padding: 4 8 16 24 32 콘텐츠와 border 사이의 간격을 지정;
+            border: 콘텐츠의 경계선 (콘텐츠 구성 요소);
+            margin: 콘텐츠 밖의 요소 / 요소들끼리 간격을 띄울 때 사용;
+            /* 보통 면접 질문으로 많이 니옴 */
+            border-radius: ;
+            max-width: ;
+            min-width: ;
+            width: 100vw;
+            height: 100vh;
+            /* 모든 브라우저 화면에서 100%로 지정하고 싶을 때 사용 */
+
+            /* 위치 속성 */
+            position: relative 기준이 되는 요소에 부여;
+            position: absolute 움직일 요소에 부여;
+            top: 0;
+            left: 0;
+            /* 움직일 요소에 같이 작성 / 기준으로부터 얼마나 멀어질 건지 지정 */
+            z-index: 요소들의 앞뒤 순서 변경;
+
+            /* display 속성 */
+            display: block;
+            display: inline;
+            display: inline block;
+            display: flex;
+            display: none;
+
+            /* 그 외 속성 */
+            overflow: hidden 지정한 영역을 자식 요소가 넘어갔을 때 안 보이게 하는 기능
+            scroll 지정한 영역을 자식 요소가 넘어가면 스크롤바가 생겨서 안 보이지만 스크롤이 가능하도록 설정한 기능;
+            transform: translateX(), translateY() 등;
+
+            /* animation */
+            -day5-에 정리함
+        }
+
+        .ex {
+            width: 300px;
+            height: 100vh;
+            background-color: lavenderblush;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="style"></div> -->
+    <div class="ex"></div>
+</body>
+</html>
