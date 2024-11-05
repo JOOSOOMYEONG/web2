@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 48px;
+}
+
+h1 {
+    width: 100px;
+    /* height: 100px; */
+    background: url(./spr_intro.png);
+    background-size: ;
+}
+
+.right_box {
+    display: flex;
+}
+
+.right_box > select, button {
+    margin: 0 16px;
+}
+
+select {
+    border: none;
+    color: #666666;
+}
+
+.sign_box{
+    display: flex;
+}
+
+.sign_box > div > button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sign_box > div > button > a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.sign_box > div > button:nth-child(2) {
+    background-color: #21c531;
+}
+
+.login_btn {
+    background-color: #21c531;
+}
+.login_btn > a {
+    color: #fafafa;
+}
