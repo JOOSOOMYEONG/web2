@@ -3,17 +3,21 @@
     margin: 0;
 }
 
+
+/* 헤더 */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 24px 48px;
+    padding: 16px 24px;
+    background-color: #f6f8fa;
+    /* align-items: center; */
 }
 
 h1 {
-    width: 100px;
-    /* height: 100px; */
     background: url(./spr_intro.png);
-    background-size: ;
+    background-position: 0 -98px;
+    width: 78px;
+    height: 29px;
 }
 
 .right_box {
@@ -21,12 +25,14 @@ h1 {
 }
 
 .right_box > select, button {
-    margin: 0 16px;
+    margin: 0 10px;
 }
 
 select {
+    width: 70px;
     border: none;
     color: #666666;
+    background-color: transparent;
 }
 
 .sign_box{
@@ -36,16 +42,18 @@ select {
 .sign_box > div > button {
     padding: 10px 24px;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
-
 .sign_box > div > button > a {
     text-decoration: none;
-    color: #333333;
+    font-size: 14px;
 }
 
-.sign_box > div > button:nth-child(2) {
-    background-color: #21c531;
+.join_btn {
+    background-color: transparent;
+}
+.join_btn > a {
+    color: #333333;
 }
 
 .login_btn {
@@ -53,4 +61,181 @@ select {
 }
 .login_btn > a {
     color: #fafafa;
+}
+/* 헤더 끝 */
+/* 호버 안 함 */
+
+/* 인트로 */
+.intro_container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #f6f8fa;
+     padding-top: 50px;
+}
+
+.intro_container > figure {
+    width: 540px;
+    overflow: hidden;
+}
+
+.intro_container > figure > img {
+    width: 540px;
+}
+
+.intro_text {
+    align-items: start;
+    margin-left: 50px;
+}
+
+.intro_text > h2 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.intro_text > p {
+    margin-top: 16px;
+}
+
+.intro_sign_box {
+    border: none;
+    border-radius: 2px;
+    margin: 16px 0;
+}
+
+.intro_sign_box > div > button {
+    width: 340px;
+    height: 54px;
+    margin: 5px 0;
+}
+
+.intro_sign_box > div > button > a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.intro_login_btn {
+    background-color: #21c531;
+    border: none;
+}
+
+.intro_login_btn >a {
+    color: #fafafa;
+}
+
+.intro_join_btn {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+}
+
+.intro_join_btn > a {
+    color: #333333;
+}
+
+.bottom_text {
+    margin: 12px 0;
+    font-size: 13px;
+}
+
+.bottom_text > p {
+    padding-top: 12px;
+}
+
+.bottom_text > p > a {
+    color: #21c531;
+    font-weight: 900;
+    margin-left: 6px;
+}
+/* 인트로 끝 */
+/* 호버 안 함 */
+
+/* 슬로건 */
+.slogan_container {
+    background: url(./bg_slogan.jpg);
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_box {
+    text-align: center;
+    color: #ffffff;
+}
+
+.text_box > h2 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.text_box > P {
+    font-size: 16px;
+    margin-top: 18px;
+}
+/* 슬로건 끝 */
+
+/* 밴드 설명 */
+.explanation_container {
+    display: flex;
+    justify-content: center;
+}
+
+.explanation_container > ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    width: 1024px;
+}
+
+.explanation_container > ul > li {
+    list-style: none;
+}
+
+.explanation_container > ul > li > figure > img {
+    width: 300px;
+    height: 160px;
+}
+
+.explanation_container > ul > li > h3 {
+    font-size: 24px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.explanation_container > ul > li > p {
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+/* 밴드 설명 끝 */
+
+/* 다운로드 */
+.band_container {
+    width: 100%;
+    height: 700px;
+    background: #FCFCFC;
+}
+.band_container > div > p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    align-items: center;
+    margin: 46px 0px 19px;
+}
+
+.band_container >div > p > a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.band_container > ul > li {
+    display: flex;
+}
+
+.band_container > ul > li > img{
+    width: 93px;
+    height: 93px;
+    overflow: hidden;
+    border-radius: 15px;
 }
