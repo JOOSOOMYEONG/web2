@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./band_clone.css">
     <title>band_clone</title>
+    <script src="https://kit.fontawesome.com/ab4f71209c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -119,35 +120,41 @@
             </section>
 
             <section class="band_container">
-                <div>
-                    <p>이런 밴드는 어때요
-                        <a href="#">모두보기</a>
-                    </p>
-                </div>
-                <ul>
-                    <li>
-                        <!-- flex 넣기 -->
-                        <img src="./band_img.png" alt="band_img">
-                        <div class="band_name_box">
-                            <h3>밴드 이름</h3>
-                            <p>설명</p>
+                <div class="band_box">
+                    <div>
+                        <p>이런 밴드는 어때요
+                            <a href="#">모두보기</a>
+                        </p>
+                    </div>
+                    <ul>
+                        <li>
+                            <!-- flex 넣기 -->
+                            <img src="./band_img.png" alt="band_img">
+                            <div class="band_name_box">
+                                <h3>밴드 이름</h3>
+                                <p>설명</p>
+                                <div>
+                                    <span>멤버수</span>
+                                    <span>
+                                       · 
+                                    </span>
+                                    <span>리더</span>
+                            </div>
                             <div>
-                                <span>멤버수</span>
-                                <span>리더</span>
-                        </div>
-                        <div>
-                            <button>
-                               <a href="#">
-                                        <span>
-                                            주제
-                                        </span>
-                                        밴드 더보기
-                                    </a>
-                            </button>
-                        </div>
-                    </li>
-
-                </ul>
+                                <button class="band_btn">
+                                   <a href="#">
+                                            <span>
+                                                주제
+                                            </span>
+                                            밴드 더보기
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                </button>
+                            </div>
+                        </li>
+    
+                    </ul>
+                </div>
             </section>
 
             <section class="download_box">
