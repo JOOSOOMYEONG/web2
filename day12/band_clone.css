@@ -248,26 +248,35 @@ select:hover {
     padding-right: 15px;
 }
 
-.band_box > ul {
+.band_selection {
     display: flex;
+    width: 1024px;
+    flex-wrap: wrap;
+    margin: 25px 0 24px;
+    list-style: none;
 }
 
-.band_box > ul > li {
+.band_selection_box {
     display: flex;
+    width: 50%;
+    margin-bottom: 8px;
 }
 
-.band_box > ul > li > img{
+.band_s_img > img{
+    overflow: hidden;
+}
+
+.band_s_img {
+    display: block;
     width: 93px;
     height: 93px;
     overflow: hidden;
     border-radius: 15px;
 }
-
 .band_name_box {
     align-items: start;
     margin-left: 20px;
 }
-
 
 .band_name_box > h3, p {
     font-size: 14px;
